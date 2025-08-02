@@ -1,0 +1,195 @@
+ <!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Web Solutions - Advanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN for new, modern icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header & Navigation -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-white">Stellar</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#hero" class="nav-link text-white">Home</a>
+                <a href="#about" class="nav-link text-white">About</a>
+                <a href="#services" class="nav-link text-white">Services</a>
+                <a href="#features" class="nav-link text-white">Features</a>
+                <a href="#contact" class="nav-link text-white">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-indigo-900 bg-opacity-90">
+            <a href="#hero" class="block text-white text-center py-3 px-4">Home</a>
+            <a href="#about" class="block text-white text-center py-3 px-4">About</a>
+            <a href="#services" class="block text-white text-center py-3 px-4">Services</a>
+            <a href="#features" class="block text-white text-center py-3 px-4">Features</a>
+            <a href="#contact" class="block text-white text-center py-3 px-4">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center gradient-bg">
+        <div class="container mx-auto px-6 text-center z-10 relative">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight opacity-0 animate-slide-in-up">Crafting Digital Experiences</h1>
+            <p class="text-lg md:text-xl text-indigo-200 mb-8 max-w-3xl mx-auto opacity-0 animate-slide-in-up-delay">We build beautiful, responsive, and high-performing websites that drive results and captivate your audience.</p>
+            <a href="#services" class="bg-purple-400 text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-purple-300 transition duration-300 transform hover:scale-105">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 colorful-bg fade-in">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Who We Are</h2>
+            <div class="w-24 h-1 bg-purple-400 mx-auto mb-8"></div>
+            <p class="max-w-3xl mx-auto text-gray-300 leading-relaxed">
+                Stellar Web Solutions is a team of passionate designers and developers dedicated to pushing the boundaries of web technology. We believe in a collaborative process, working closely with our clients to turn their vision into a digital reality. Our focus is on clean code, user-centric design, and measurable success.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-900 fade-in">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white text-center mb-6">What We Offer</h2>
+            <div class="w-24 h-1 bg-purple-400 mx-auto mb-12"></div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-gray-800 p-8 rounded-lg custom-shadow animated-card transform hover:-translate-y-2 transition duration-300">
+                    <div class="text-purple-400 mb-4">
+                        <i data-lucide="pen-tool" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">UI/UX Design</h3>
+                    <p class="text-gray-400">Crafting intuitive and engaging user interfaces that provide exceptional user experiences.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-gray-800 p-8 rounded-lg custom-shadow animated-card transform hover:-translate-y-2 transition duration-300">
+                    <div class="text-purple-400 mb-4">
+                        <i data-lucide="code" class="w-12 h-12"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Web Development</h3>
+                    <p class="text-gray-400">Building robust and scalable websites and web applications with clean, modern code.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-gray-800 p-8 rounded-lg custom-shadow animated-card transform hover:-translate-y-2 transition duration-300">
+                    <div class="text-purple-400 mb-4">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Responsive Design</h3>
+                    <p class="text-gray-400">Websites that look and work perfectly on any device, from desktops to smartphones.</p>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="bg-gray-800 p-8 rounded-lg custom-shadow animated-card transform hover:-translate-y-2 transition duration-300">
+                    <div class="text-purple-400 mb-4">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Interactive Development</h3>
+                    <p class="text-gray-400">Engaging user interfaces with smooth animations and modern JavaScript frameworks.</p>
+                </div>
+                <!-- Service Card 5 -->
+                <div class="bg-gray-800 p-8 rounded-lg custom-shadow animated-card transform hover:-translate-y-2 transition duration-300">
+                    <div class="text-purple-400 mb-4">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">SEO & Performance</h3>
+                    <p class="text-gray-400">Optimized for search engines and built for speed to ensure maximum visibility and reach.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Features Section with Icons -->
+    <section id="features" class="py-20 colorful-bg fade-in">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white text-center mb-6">Key Features</h2>
+            <div class="w-24 h-1 bg-purple-400 mx-auto mb-12"></div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature Card 1 -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-900 rounded-lg custom-shadow animated-card transform hover:scale-105 transition duration-300">
+                    <div class="w-16 h-16 flex items-center justify-center mb-4 rounded-full bg-purple-600 bg-opacity-20 text-purple-400 icon-hover-bounce">
+                        <i data-lucide="rocket" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Blazing Fast</h3>
+                    <p class="text-gray-400">Our websites are built for speed, ensuring a seamless user experience and better SEO rankings.</p>
+                </div>
+                <!-- Feature Card 2 -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-900 rounded-lg custom-shadow animated-card transform hover:scale-105 transition duration-300">
+                    <div class="w-16 h-16 flex items-center justify-center mb-4 rounded-full bg-purple-600 bg-opacity-20 text-purple-400 icon-hover-bounce">
+                        <i data-lucide="shield-check" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Secure & Reliable</h3>
+                    <p class="text-gray-400">We prioritize security, implementing best practices to protect your data and your users.</p>
+                </div>
+                <!-- Feature Card 3 -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-900 rounded-lg custom-shadow animated-card transform hover:scale-105 transition duration-300">
+                    <div class="w-16 h-16 flex items-center justify-center mb-4 rounded-full bg-purple-600 bg-opacity-20 text-purple-400 icon-hover-bounce">
+                        <i data-lucide="palette" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Stunning Design</h3>
+                    <p class="text-gray-400">We create custom, modern designs that are visually appealing and reflect your brand identity.</p>
+                </div>
+                <!-- Feature Card 4 -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-900 rounded-lg custom-shadow animated-card transform hover:scale-105 transition duration-300">
+                    <div class="w-16 h-16 flex items-center justify-center mb-4 rounded-full bg-purple-600 bg-opacity-20 text-purple-400 icon-hover-bounce">
+                        <i data-lucide="bar-chart-2" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Growth Focused</h3>
+                    <p class="text-gray-400">Our solutions are built to scale with your business, with built-in analytics and performance tracking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 fade-in">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white text-center mb-6">Get In Touch</h2>
+            <div class="w-24 h-1 bg-purple-400 mx-auto mb-12"></div>
+            <div class="max-w-2xl mx-auto bg-gray-800 p-8 rounded-lg custom-shadow">
+                <form onsubmit="event.preventDefault(); sendMessage();">
+                    <div class="mb-6">
+                        <label for="name" class="block text-gray-300 mb-2">Name</label>
+                        <input type="text" id="name" class="w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-4 text-white form-input transition duration-300">
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-gray-300 mb-2">Email</label>
+                        <input type="email" id="email" class="w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-4 text-white form-input transition duration-300">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-300 mb-2">Message</label>
+                        <textarea id="message" rows="4" class="w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-4 text-white form-input transition duration-300" placeholder="Type a brief message and let us improve it..."></textarea>
+                    </div>
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                        <button type="button" id="improve-message-btn" class="bg-indigo-500 text-white font-bold py-3 px-8 rounded-full hover:bg-indigo-400 transition duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
+                            <span id="improve-message-text">✨ Improve Message</span>
+                            <div id="improve-message-loader" class="hidden loader"></div>
+                        </button>
+                        <button type="submit" class="bg-purple-400 text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-purple-300 transition duration-300 transform hover:scale-105">Send Message</button>
+                    </div>
+                </form>
+                <div id="message-box" class="hidden mt-4 p-4 rounded-md text-sm text-center"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 Stellar Web Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js" defer></script>
+</body>
+</html>

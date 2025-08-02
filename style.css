@@ -1,0 +1,140 @@
+ /* Custom styles to enhance Tailwind */
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* More colorful gradient background with animation */
+.gradient-bg {
+    background: linear-gradient(135deg, #1a237e, #4a148c, #880e4f, #d500f9);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s ease infinite;
+}
+
+/* New complementary gradient for other sections */
+.colorful-bg {
+    background: linear-gradient(135deg, #0f172a, #1d4ed8, #065f46, #1f2937);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Glassmorphism effect for the header */
+#navbar.scrolled {
+    background-color: rgba(26, 35, 126, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Underline effect for nav links */
+.nav-link {
+    position: relative;
+    transition: color 0.3s;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d500f9;
+    transition: width 0.3s ease-in-out;
+}
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
+
+/* Custom shadow for cards */
+.custom-shadow {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+}
+
+/* New animated border for cards on hover */
+.animated-card {
+    position: relative;
+    z-index: 10;
+}
+.animated-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #d500f9, #4a148c);
+    background-size: 400%;
+    border-radius: 12px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease, background-position 0.3s ease;
+}
+.animated-card:hover::before {
+    opacity: 1;
+    background-position: 100% 100%;
+}
+
+/* Custom focus ring for form inputs */
+.form-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4a148c, 0 0 0 4px #d500f9;
+}
+
+/* Fade-in animation for sections */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* New slide-in animation for hero content */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate-slide-in-up {
+    animation: slideInUp 0.8s ease-out forwards;
+}
+.animate-slide-in-up-delay {
+    animation: slideInUp 0.8s ease-out 0.3s forwards;
+}
+
+/* New icon bounce animation on hover */
+@keyframes iconBounce {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-5px) scale(1.1); }
+}
+.icon-hover-bounce:hover {
+    animation: iconBounce 0.5s ease-in-out;
+}
+
+/* Loading spinner animation */
+.loader {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #880e4f;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
